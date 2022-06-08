@@ -1,0 +1,47 @@
+footer {
+    color: white;
+    background-color: #ff8780;
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconos ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    transition: 0.2s;
+}
+.iconos ul li a:hover {
+    color: #ff8780;
+    background-color: #ffffff;
+}
+.iconos ul li a:focus-visible {
+    color: #ff8780;
+    background-color: #ffffff;
+    outline: none;
+}
+.barraMenuFooter nav ul li a{
+    margin: 10px;
+    color: #ffffff;
+}
+.barraMenuFooter nav ul li a:focus-visible {
+    border: 1px solid #ffffff;
+    outline: none;
+}
+footer p {
+    text-align: center;
+    margin: 40px 0;
+}

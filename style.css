@@ -1,19 +1,119 @@
 body {
   margin: 0;
+  height: 100%;
 }
 
-main {
+header {
+  background-color: whitesmoke;
+  box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+  margin: 0;
+  padding: 25px 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.conteinerMenu {
+  width: 55%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navBar {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navBar ul {
+  list-style-type: none;
+  margin: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+li a:focus-visible {
+  border: 1px solid #ff8780;
+  outline: none;
+}
+
+.boton a {
+  background-color: #ff8780;
+  height: 30px;
+  width: 70px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.boton a:hover {
+  background-color: #f8a19c;
+  color: white;
+}
+
+.boton a:focus-visible {
+  box-shadow: 0px 0px 7px #ff8780;
+  border: 1px solid white;
+  outline: none;
+}
+
+.card {
+  margin: 10px;
+  padding: 20px 10px;
+  height: auto;
+  width: 17%;
+  border-radius: 10px;
+  height: auto;
+  width: 17%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  border-radius: 10px;
+  background-color: pink;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 320px;
+}
+.card img {
+  width: 100%;
+}
+.card h3 {
+  margin: 20px 0 0 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main .login {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin: 0;
   padding: 20px 10px;
   height: auto;
@@ -21,7 +121,7 @@ main .login {
   border-radius: 10px;
   background-color: papayawhip;
 }
-main .login .login-signup-buttons {
+main .login .login-h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,18 +131,6 @@ main .login .login-signup-buttons {
   height: auto;
   width: 100%;
   border-radius: 10px;
-}
-main .login button {
-  height: 40px;
-  width: 45%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background-color: pink;
-  color: #ffffff;
-  border: none;
 }
 main .login label {
   display: flex;
@@ -66,7 +154,7 @@ main .login label input {
 }
 main .login .submit-button {
   height: 40px;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -75,6 +163,125 @@ main .login .submit-button {
   background-color: pink;
   color: #ffffff;
   border: none;
+}
+main article {
+  margin: 20px 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+}
+main article .baner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 150px 0 0 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+main article .baner .bannerPhoto {
+  position: absoluTe;
+  top: -500px;
+  width: 100vw;
+  z-index: 0;
+}
+main article .baner .logo {
+  z-index: 1;
+  height: 30vh;
+  width: 30vw;
+  padding: 0 0 0 150px;
+}
+main article .baner .logo img {
+  height: 100%;
+}
+main article .baner .title {
+  z-index: 1;
+  font-size: xx-large;
+  padding: 0 0 0 150px;
+}
+main article .baner .title h1 {
+  margin: 20px 0 0 0;
+}
+main article .conocimientos {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main article .conocimientos .titulo {
+  font-size: large;
+}
+main article .conocimientos .conteinerCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  border-radius: 0;
+  flex-wrap: wrap;
+}
+
+footer {
+  color: white;
+  background-color: #ff8780;
+  padding: 40px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconos ul li a {
+  color: #ffffff;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  transition: 0.2s;
+}
+
+.iconos ul li a:hover {
+  color: #ff8780;
+  background-color: #ffffff;
+}
+
+.iconos ul li a:focus-visible {
+  color: #ff8780;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.barraMenuFooter nav ul li a {
+  margin: 10px;
+  color: #ffffff;
+}
+
+.barraMenuFooter nav ul li a:focus-visible {
+  border: 1px solid #ffffff;
+  outline: none;
+}
+
+footer p {
+  text-align: center;
+  margin: 40px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

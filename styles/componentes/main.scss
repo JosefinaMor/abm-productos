@@ -1,0 +1,68 @@
+@import "./mainComponentes/card";
+main{
+    @include display-flex-creator($display: flex, $flex-direction: column, $justify-content: center, $align-items: center);
+    .login{
+        z-index: 2;
+        @include display-flex-creator($display: flex, $flex-direction: column, $justify-content: space-between, $align-items: center);
+        @include box-parameter($margin: 0, $padding: 20px 10px, $height: auto, $width: 30vw);
+        background-color: papayawhip;
+        .login-h2{
+            @include display-flex-creator($justify-content: space-between, $align-items: center);
+            @include box-parameter($margin: 0, $padding: 0, $height: auto, $width: 100%);
+        }
+        label{
+            @include display-flex-creator($display: flex, $flex-direction: column, $justify-content: center, $align-items: flex-start);
+            @include box-parameter($margin: 15px 0, $padding: 0, $height: auto, $width: 100%);
+            input{
+                @include input($width: 99%, $border-radius: 10px);
+            }
+        }
+        .submit-button{
+            @include button($width: 50%);
+        }
+    }
+    article{
+        @include box-parameter($margin: 20px 0, $padding: 0, $height: 100%, $width: 100%, $border-radius: 0);
+        .baner{
+            position: relative;
+            @include display-flex-creator($display: flex, $flex-direction: column, $justify-content: center, $align-items: flex-start);
+            @include box-parameter($margin: 150px 0 0 0, $padding: 0, $height: auto, $width: 100%, $border-radius: 10px);
+            .bannerPhoto{
+                position: absoluTe;
+                top: -500px;
+                width: 100vw;
+                z-index: 0;
+            }
+            .logo{
+                z-index: 1;
+                height: 30vh;
+                width: 30vw;
+                padding: 0 0 0 150px;
+                img{
+                    height: 100%;
+                }
+            }
+            .title{
+                z-index: 1;
+                font-size: xx-large;
+                padding: 0 0 0 150px;
+                h1{
+                    margin: 20px 0 0 0;
+                }
+            }           
+        }
+        .conocimientos{
+            z-index: 1;
+            @include display-flex-creator($display: flex, $flex-direction: column, $justify-content: center, $align-items: center);
+            .titulo{
+                font-size: large;
+            }
+            .conteinerCards{
+                @include display-flex-creator($display: flex, $flex-direction: row, $justify-content: space-between, $align-items: center);
+                @include box-parameter($margin: 0, $padding: 10px, $height: auto, $width: 100%, $border-radius: 0);
+                flex-wrap: wrap;
+            }
+        }
+
+    }
+}

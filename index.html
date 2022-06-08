@@ -9,14 +9,35 @@
 </head>
 <body>
     <header>
-
+        <nav class="navBar">
+            <ul>
+                <li>
+                    <a href="#hola">Home</a>
+                </li>
+                <li>
+                    <a href="#conocimientos">Products</a>
+                </li>
+                <li class="boton">
+                    <a href="#contacto">Log in</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <form action="submit" class="login">
-            <div class="login-signup-buttons">
-                <button>Log In</button>
-                <button>Sign Up</button>
+        <article>
+            <div class="baner">
+                <img class="bannerPhoto" src="./assets/spa-composition-with-body-care-items-on-light.jpg" alt="">
+                <div class="logo">
+                    <img src="./assets/lotion.png" alt="">
+                </div> 
+                <div class="title">
+                    <h1>Farmacia Care</h1>
+                </div>
             </div>
+        </article>
+        
+        <form action="submit" class="login">
+            <h2 class="login-h2">Log in</h2>
             <label for=""> email
                 <input type="text" value="type email">
             </label>
@@ -25,10 +46,91 @@
             </label>
             <button class="submit-button">submit</button>
             <a href="">Crear usuario</a>
-        </form>
+        </form> 
+
+        <article id="conocimientos">
+            <div class="conocimientos">
+                <div class="titulo">
+                    <h2>Products</h2>
+                </div>
+                <div id="tarjetas" class="conteinerCards">
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa1.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>EDT Alejandro Sanz Mi Acorde Woman x 80 ml</h3>
+                    </button>
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa2.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>EDT Antonio Banderas Blue Seduction Wave Woman x 100 ml</h3>
+                    </button>
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa3.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>Crema Para Manos Y Cuerpo Fresa X 60 Gr</h3>
+                    </button>
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa4.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>Crema Humectante Corporal Home Spa Real Love x 250ml</h3>
+                    </button>
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa5.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>Agua Micelar Desmaquillante Garnier Skin Active x 400 ml</h3>
+                    </button>
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa1.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>EDT Alejandro Sanz Mi Acorde Woman x 80 ml</h3>
+                    </button>
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa2.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>EDT Antonio Banderas Blue Seduction Wave Woman x 100 ml</h3>
+                    </button>
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa3.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>Crema Para Manos Y Cuerpo Fresa X 60 Gr</h3>
+                    </button>
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa4.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>Crema Humectante Corporal Home Spa Real Love x 250ml</h3>
+                    </button>
+                    <button id=${element.id} type="button" class="card">
+                        <div>
+                            <img src="./assets/imgrosa5.jpg" alt=${element.alt} width="300px">
+                        </div>
+                        <h3>Agua Micelar Desmaquillante Garnier Skin Active x 400 ml</h3>
+                    </button>
+                </div>
+            </div>
+        </article>
     </main>
     <footer>
-
+        <div class="barraMenuFooter">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Conacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p>Juan Cruz Guastella y Josefina Morales.</p>
+        </div>
     </footer>
     
 </body>

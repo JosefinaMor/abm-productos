@@ -1,30 +1,5 @@
 @import "./styles/_reset";
 @import "./styles/_mixins";
-
-main{
-    @include display-flex-creator();
-    height: 100vh;
-    .login{
-        @include display-flex-creator($display: flex, $flex-direction: column, $justify-content: space-between, $align-items: flex-start);
-        @include box-parameter($margin: 0, $padding: 20px 10px, $height: auto, $width: 30vw);
-        background-color: papayawhip;
-        .login-signup-buttons{
-            @include display-flex-creator($justify-content: space-between, $align-items: center);
-            @include box-parameter($margin: 0, $padding: 0, $height: auto, $width: 100%);
-
-        }
-        button{
-            @include button($back-color: transparent, $color: #ffffff, $width: 45%);
-        }
-        label{
-            @include display-flex-creator($display: flex, $flex-direction: column, $justify-content: center, $align-items: flex-start);
-            @include box-parameter($margin: 15px 0, $padding: 0, $height: auto, $width: 100%);
-            input{
-                @include input($width: 99%, $border-radius: 10px);
-            }
-        }
-        .submit-button{
-            @include button();
-        }
-    }
-}
+@import "./styles/componentes/header";
+@import "./styles/componentes/main";
+@import "./styles/componentes/footer";
