@@ -14,3 +14,9 @@ label{
 
     }
 }
+.prev-next-buttons{
+    select{
+        @include input($width: auto, $border-radius: 10px, $padding: 5px, $margin: 0);
+        background-color: papayawhip;
+    }
+}

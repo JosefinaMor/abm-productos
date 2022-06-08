@@ -139,6 +139,41 @@ label text-area {
   align-items: flex-start;
 }
 
+.prev-next-buttons select {
+  margin: 0;
+  padding: 5px;
+  height: 40px;
+  width: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: none;
+  background-color: papayawhip;
+}
+
+.prev-next-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.prev-next-buttons button {
+  margin: 5px;
+  padding: 10px;
+  min-height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: pink;
+  color: #ffffff;
+  border: none;
+}
+
 .submit-button {
   height: 40px;
   width: 50%;
