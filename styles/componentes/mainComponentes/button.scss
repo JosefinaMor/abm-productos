@@ -1,0 +1,8 @@
+.submit-button{
+    @include button($width: 50%);
+}
+.new-product{
+    .submit-button{
+        grid-column-end: auto;
+    }
+}
