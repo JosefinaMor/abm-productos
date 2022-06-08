@@ -71,11 +71,13 @@ main{
         }
         .new-product{
             @include display-flex-creator($display: flex, $flex-direction: row, $justify-content: space-between, $align-items: center);
+            border-radius: 10px;
+            padding: 20px;
             z-index: 3;
             background-color: papayawhip;
             section{
                 @include display-flex-creator($display: flex, $flex-direction: column, $justify-content: space-evenly, $align-items: flex-start);
-                @include box-parameter($margin: 0, $padding: 20px 10px, $height: 310px, $width: 25vw);
+                @include box-parameter($margin: 0, $padding: 0, $height: 310px, $width: 25vw);
                 width: 50%;
                 img{
                     width: 100%;
